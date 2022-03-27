@@ -42,6 +42,8 @@ public class PeminjamanBukuPerpustakaan {
                 case 2 :
                     break;
                 case 3 :
+                    System.out.println("--------------------");
+                    System.out.println("Anda sedang meminjam buku "+listMenu.cekPinjam(pinjam, counter));
                     break;
                 case 4 :
                     System.exit(0);
