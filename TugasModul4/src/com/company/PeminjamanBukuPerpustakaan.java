@@ -2,27 +2,26 @@ package com.company;
 import java.util.Scanner;
 
 public class PeminjamanBukuPerpustakaan {
-    static void Menu(){
-        System.out.println("Pilih layanan kami");
-        String []Menu = {"1. Lihat Daftar Buku", "2. Pinjam Buku", "3. Pengembalian Buku", "4. Buku Yang Dipinjam", "5. Keluar"};
-        for (int i = 0; i <= 4 ; i++) {
+    System.out.println("Pilih layanan kami");
+        String []Menu = {"1. Pinjam Buku", "2. Pengembalian Buku", "3. Buku yang Dipinjam", "4. Keluar"};
+        for (int i = 0; i <= 3 ; i++) {
             System.out.println(Menu[i]);
         }
     }
-    static void ListBuku(){
-        System.out.println("Daftar buku : ");
-        String []ListBuku = {"1. Bumi Manusia", "2. Anak Semua Bangsa", "3. Jejak langkah", "4. Rumah Kaca"};
-        for (int i = 0; i <= 3 ; i++) {
-            System.out.println(ListBuku[i]);
-        }
-    }
     public static void main(String[] args) {
+        MenuPerpustakaan listMenu = new MenuPerpustakaan();
         Scanner input = new Scanner(System.in);
+        int pilihBuku = 0, counter = 0, pilihMenu;
+        String pinjam = "";
+        String[] listBuku = listMenu.ListBuku();
+        System.out.println("Peminjaman dan Pengembalian Buku Perpustakaan");
         while (true){
+            System.out.println("---------------------");
             Menu();
+            System.out.println("---------------------");
             System.out.print("Pilih menu : ");
-            int pilih = input.nextInt();
-            switch (pilih){
+            pilihMenu = input.nextInt();
+            switch (pilihMenu)
                 case 1 :
                     ListBuku();
                     break;
