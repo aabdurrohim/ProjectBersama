@@ -1,4 +1,4 @@
-package com.example;
+package com.company;
 import java.util.Scanner;
 
 public class PeminjamanBukuPerpustakaan {
