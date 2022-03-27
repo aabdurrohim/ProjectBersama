@@ -2,7 +2,8 @@ package com.company;
 import java.util.Scanner;
 
 public class PeminjamanBukuPerpustakaan {
-    System.out.println("Pilih layanan kami");
+    static void Menu(){
+        System.out.println("Pilih layanan kami");
         String []Menu = {"1. Pinjam Buku", "2. Pengembalian Buku", "3. Buku yang Dipinjam", "4. Keluar"};
         for (int i = 0; i <= 3 ; i++) {
             System.out.println(Menu[i]);
