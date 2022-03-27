@@ -23,7 +23,20 @@ public class PeminjamanBukuPerpustakaan {
             pilihMenu = input.nextInt();
             switch (pilihMenu)
                 case 1 :
-                    ListBuku();
+                    System.out.println("---------------------");
+                    System.out.println("Daftar Buku");
+                    for (int i = 0; i <= 3 ; i++) {
+                        System.out.println(listBuku[i]);
+                    }
+                    System.out.print("Masukkan nomor buku yang ingin dipinjam: ");
+                    pilihBuku = input.nextInt();
+                    if(pinjam == "") {
+                        pinjam = listBuku[pilihBuku - 1];
+                    }
+                    listMenu.pinjamBuku(pinjam, counter);
+                    if(pinjam != "") {
+                        counter++;
+                    }
                     break;
                 case 2 :
                     break;
