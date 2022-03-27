@@ -43,8 +43,6 @@ public class PeminjamanBukuPerpustakaan {
                 case 3 :
                     break;
                 case 4 :
-                    break;
-                case 5 :
                     System.exit(0);
                     break;
             }
