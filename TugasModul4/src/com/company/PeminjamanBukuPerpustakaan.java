@@ -43,6 +43,7 @@ public class PeminjamanBukuPerpustakaan {
                     System.out.println("---------------------");
                     listMenu.kembaliBuku(pinjam, counter);
                     counter = 0;
+                    pinjam = "";
                     break;
                 case 3 :
                     System.out.println("--------------------");
