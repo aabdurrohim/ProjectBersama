@@ -9,6 +9,13 @@ public class MenuPerpustakaan {
             System.out.println("Anda tidak dapat meminjam lebih dari 1 buku sekaligus");
         }
     }
+    public String cekPinjam(String pinjam, int counter){
+        if (counter == 0){
+            return "- (Anda tidak sedang meminjam buku apapun)";
+        }else{
+            return pinjam;
+        }
+    }
     public String[] ListBuku() {
         String[] ListBuku = {"1. Bumi Manusia", "2. Anak Semua Bangsa", "3. Jejak langkah", "4. Rumah Kaca"};
         return ListBuku;
